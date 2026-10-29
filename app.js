@@ -26,12 +26,32 @@
         
 
 
-let ans = Number(prompt("введіть p"));
-let n = String(1);
-do{
+// let ans = Number(prompt("введіть p"));
+// let number = 0;
+// let sum = 0;
+// let i = 0;
 
-    ans = ans - 1;
-    n = String(n + n);
+// while( i <= ans){
+//     sum += (Math.pow(10, i) - 1) / 9 ;
+//     i++
+
+// }
+// console.log(sum)
+
+
+let answ = [];
+let p =  Number(prompt("введіть 1 число масиву"));
+let i = 0;
+let result = 0;
+do{
+    p = Number(p);
+    answ.push(p)
+    p = prompt("введіть наступне число масиву");
+    result += answ[i]
+    p = String(p);
+    i++
     
-}while(ans > 0)
-console.log(n)
+} while ( p !== "end");
+console.log(answ)
+console.log(result)
+console.log(result/i)
